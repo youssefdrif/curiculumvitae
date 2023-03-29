@@ -1,0 +1,151 @@
+.maphoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.paragraph{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    width: 260px;
+    gap: 5px;
+}
+.p{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.p2{
+    font-size: 32px;
+}
+
+.button{
+    background-color: #272343;
+    border: none;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 192px;
+}
+
+.logogit, .logolinkedin{
+    color: #272343;
+    font-size: 40px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.logogit:hover, .logolinkedin:hover{
+   color: #968bca;
+   cursor: pointer;
+}
+
+.GridContainer{
+    margin: 0px!important;
+    min-height: 100dvh;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0.60fr 0.60fr 2.75fr 0fr; /* soit mettre 1fr 1fr 1fr 1fr*/
+    background: linear-gradient(to right, #e3f6f5 25%, #fffffe 25%, #fffffe 100%);
+}
+
+.Grid2,.Grid{
+    flex-basis: unset!important;
+    grid-column: 2 / 3;
+    margin: 16px;
+}
+.Grid2{
+    margin-top: 0px!important;
+}
+
+.Grid3 {
+    flex-basis: unset!important;
+    display: grid;
+    margin: 16px;
+}
+
+.font{
+    font-weight: 500;
+    font-size: 22px;
+    color:#272343;
+    line-height: 35px;
+    /* text-align: justify; */
+}
+.fontbold{
+    font-weight: 700;
+    font-size: 22px;
+    font-weight: bolder;
+    color:#272343;
+    line-height: 35px;
+    /* text-align: justify; */
+}
+
+.font2{
+    font-weight: 700;
+    font-size: 20px;
+    color:#272343;
+    margin-right: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+}
+* > .MuiGrid-item{
+    padding: 0,
+  }
+
+  .card{
+    background-color: #bae8e8;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8%;
+    grid-column: 2;
+  }
+
+  .Grid4{
+    display: flex;
+    margin: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    grid-gap: 4px;
+  }
+
+  .icons{
+    color: #272343;
+    margin-right: 4px;
+  }
+
+  .button1 {
+    display: inline-block;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid #272343;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #272343;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .button1:hover {
+    background-color: #272343;
+    color: #bae8e8;
+  }
+  .Grid5{
+    display: flex;
+    margin: 8px;
+    grid-gap: 16px;
+  }
