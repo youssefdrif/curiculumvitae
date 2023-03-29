@@ -6,6 +6,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
 }
+/* *{
+  box-shadow: 0 0 0 3px red inset;    //FOR DEBUGGING CSS
+} */
 
 code {
   font-family: 'Poppins', sans-serif;

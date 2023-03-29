@@ -6,7 +6,7 @@ export default function Profile() {
   return (
     <div className="Container">
       <div className="cardprojet">
-        <div className="Grid" xs={2}>
+        <div className="GridMain" xs={2}>
           <p>Projet 1</p>
           <p>
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -25,7 +25,7 @@ export default function Profile() {
             pariatur?"
           </p>
         </div>
-        <div className="Grid2" xs={2}>
+        <div className="GridSecond" xs={2}>
           <img className="weather" src={weather} alt="weather" />
         </div>
       </div>

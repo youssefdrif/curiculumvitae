@@ -22,12 +22,12 @@
     grid-column: 2;
 }
 
-.Grid2,.Grid{
+.GridSecond,.GridMain{
     flex-basis: unset!important;
     grid-column: 2 / 3;
     margin: 16px;
 }
-.Grid2{
+.GridSecond{
     margin-top: 0px!important;  
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
