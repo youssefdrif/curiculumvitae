@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../images/img1.jpg";
+import PORTRAIT from "../../images/PORTRAIT.jpg";
 import "./Home.css";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdLocationPin, MdPending } from "react-icons/md";
@@ -40,7 +40,7 @@ export default function Home() {
     <div className="GridContainer">
       <div className="card">
         <div className="Grid" xs={2}>
-          <img className="maphoto" src={img1} alt="maphoto" />
+          <img className="maphoto" src={PORTRAIT} alt="maphoto" />
         </div>
         <div className="Grid2" xs={2}>
           <p className="font">
