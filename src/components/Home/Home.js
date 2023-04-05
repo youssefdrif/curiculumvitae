@@ -40,7 +40,7 @@ export default function Home() {
     <div className="GridContainer">
       <div className="card">
         <div className="Grid" xs={2}>
-          <img className="maphoto" src={PORTRAIT} alt="maphoto" />
+          <img className="maphoto" loading="lazy" src={PORTRAIT} alt="maphoto" />
         </div>
         <div className="Grid2" xs={2}>
           <p className="font">
