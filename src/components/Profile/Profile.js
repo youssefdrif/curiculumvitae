@@ -4,19 +4,44 @@ import weather from "../../images/weatherapp.png";
 
 export default function Profile() {
   return (
-    <div class="grid-container">
-      <div class="cardprofil">
-        <div class="card-content">
-          <div class="card-text">
-            <h2>Card Title</h2>
+    <div className="grid-container">
+      <div className="cardprofil">
+        <div className="card-content">
+          <div className="card-text">
+            <h2>Application météo</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              aliquam euismod ex, eget convallis risus tempus vel.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
             </p>
           </div>
-          <div class="card-image">
-            <img src={weather} alt="Card" />
           </div>
+          <div className="card-image">
+            <img src={weather} alt="Card" />
+        </div>
+      </div>
+      <div className="cardprofil">
+        <div className="card-content">
+          <div className="card-text">
+            <h2>Application météo</h2>
+            <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            </p>
+          </div>
+          </div>
+          <div className="card-image">
+            <img src={weather} alt="Card" />
+        </div>
+      </div>
+      <div className="cardprofil">
+        <div className="card-content">
+          <div className="card-text">
+            <h2>Application météo</h2>
+            <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            </p>
+          </div>
+          </div>
+          <div className="card-image">
+            <img src={weather} alt="Card" />
         </div>
       </div>
     </div>

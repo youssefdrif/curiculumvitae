@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { AiFillHome } from 'react-icons/ai';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="Navbar">
-      <Link to="/" className="nav-logo"><AiFillHome /></Link>
+      <NavLink to="/" className="nav-logo"><AiFillHome /></NavLink>
       <div className={`nav-items ${isOpen && "open"}`}>
-        <Link to="/profil">Projets personnels</Link>
-        <Link to="/experience">Experience</Link>
+        <NavLink to="/profil">Projets personnels</NavLink>
+        <NavLink to="/experience">Experience</NavLink>
       </div>
       <div
         className={`nav-toggle ${isOpen && "open"}`}

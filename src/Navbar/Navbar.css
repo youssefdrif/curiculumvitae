@@ -5,6 +5,9 @@
     align-items: center;
     /* background: #e3f6f5; */
   }
+  a.active {
+     color: #968bca!important;
+  }
   
   .Navbar > .nav-logo {
     font-weight: 700;
@@ -14,7 +17,7 @@
     transition: all 0.3s ease-in-out;
   }
   .Navbar > .nav-logo:hover {
-    color: #968bca;;
+    color: #968bca;
   }
   
   .Navbar > .nav-items > a {
@@ -86,7 +89,7 @@
       position: relative;
       width: 32px;
       height: 2px;
-      background: #968bca;;
+      background: #968bca;
       transition: all 0.45s ease-in-out;
     }
   
