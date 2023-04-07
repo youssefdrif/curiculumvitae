@@ -23,20 +23,82 @@
   .card-textexp {
     text-align: center;
     margin: 16px;
+    color: #272343;
   }
   
   .card-imageexp {
+    color: #272343;
     height: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .card-imageexp img {
-    height: 100%;
-    object-fit: cover;
-    width: auto;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 8px;
+  p{
+    font-weight: 500;
+  }
+
+  .icones{
+    text-align: center;
+  }
+
+  .dhuoda{
+    width: 100px;
+  }
+
+  .digitales{
+    width: 150px;
+  }
+
+  .technos {
+    margin-top: 16px;
+  }
+
+  .logoreact{
+    font-size: 40px;
+    color: #61DBFB;
+    margin: 8px;
+  }
+  .logogitlab{
+    font-size: 40px;
+    margin: 8px;
+    color: #E24329;
+  }
+
+  .logodocker{
+    font-size: 40px;
+    margin: 8px;
+    color: #0db7ed;
+  }
+
+  .logocss{
+    font-size: 40px;
+    margin: 8px;
+    color: #264de4;
+  }
+
+  .logovscode{
+    font-size: 40px;
+    margin: 8px;
+    color: #008BD3;
+  }
+  .logovs{
+    font-size: 40px;
+    margin: 8px;
+    color: #6A1B9A;
+  }
+  .logosql{
+    font-size: 40px;
+    margin: 8px;
+    color: #326690;
+  }
+  .logolinux{
+    font-size: 40px;
+    margin: 8px;
+    color: #000000;
+  }
+  .logophp{
+    font-size: 40px;
+    margin: 8px;
+    color: #777BB3;
   }
