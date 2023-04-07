@@ -29,18 +29,30 @@ export default function Home() {
   };
 
   const handleClickGitHub = () => {
-    window.open('https://github.com/youssefdrif', "_blank") || window.location.replace('https://github.com/youssefdrif');
-  }
+    window.open("https://github.com/youssefdrif", "_blank") ||
+      window.location.replace("https://github.com/youssefdrif");
+  };
 
   const handleClickLinkedin = () => {
-    window.open('https://www.linkedin.com/in/youssef-drif-67927a239/', "_blank") || window.location.replace('https://www.linkedin.com/in/youssef-drif-67927a239/');
-  }
+    window.open(
+      "https://www.linkedin.com/in/youssef-drif-67927a239/",
+      "_blank"
+    ) ||
+      window.location.replace(
+        "https://www.linkedin.com/in/youssef-drif-67927a239/"
+      );
+  };
 
   return (
     <div className="GridContainer">
       <div className="card">
         <div className="Grid" xs={2}>
-          <img className="maphoto" loading="lazy" src={PORTRAIT} alt="maphoto" />
+          <img
+            className="maphoto"
+            loading="lazy"
+            src={PORTRAIT}
+            alt="maphoto"
+          />
         </div>
         <div className="Grid2" xs={2}>
           <p className="font">
@@ -50,12 +62,17 @@ export default function Home() {
           </p>
           <div className="Gridlogo">
             <BsGithub onClick={handleClickGitHub} className="logogit" />
-            <BsLinkedin onClick={handleClickLinkedin} className="logolinkedin" />
+            <BsLinkedin
+              onClick={handleClickLinkedin}
+              className="logolinkedin"
+            />
           </div>
         </div>
       </div>
       <div className="Grid3" xs={2}>
-        <p className="fontbold">Bonjour! Je suis Drif Youssef,</p>
+        <p className="fontbold">
+          <span>Bonjour!</span> <span>Je suis</span> <span>Drif Youssef,</span>
+        </p>
         <p className="font">
           actuellement diplômé d'une licence professionnelle en cybersécurité je
           souhaiterai approfondir mon experience en développement web.

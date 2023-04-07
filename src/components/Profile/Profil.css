@@ -1,5 +1,5 @@
 .grid-container {
-  background: linear-gradient(to right, #e3f6f5 50%, #fffffe 50%, #fffffe 100%);
+  background: #e3f6f5;
   display: grid;
   justify-content: center;
   align-items: center;

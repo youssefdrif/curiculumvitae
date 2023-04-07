@@ -54,7 +54,7 @@
     align-items: center;
     display: grid;
     grid-template-columns: 0.60fr 0.60fr 2.75fr 0fr; /* soit mettre 1fr 1fr 1fr 1fr*/
-    background: linear-gradient(to right, #e3f6f5 25%, #fffffe 25%, #fffffe 100%);
+    background: linear-gradient(to right, #e3f6f5 25%, #ffffff 25%, #ffffff 100%);
 }
 
 .Grid2,.Grid{
@@ -85,6 +85,7 @@
     font-weight: bolder;
     color:#272343;
     line-height: 35px;
+    width: max-content;
     /* text-align: justify; */
 }
 
@@ -148,4 +149,34 @@
     display: flex;
     margin: 8px;
     grid-gap: 16px;
+  }
+
+  .fontbold span{
+    opacity: 0;
+    animation: appear 1.2s forwards;
+  }
+
+  .fontbold span:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .fontbold span:last-child {
+    animation-delay: 2s;
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
   }
