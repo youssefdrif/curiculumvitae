@@ -10,7 +10,8 @@ import {
   SiVisualstudio,
   SiPostgresql,
   SiPhp,
-  SiPhpmyadmin,SiMysql
+  SiPhpmyadmin,
+  SiMysql,
 } from "react-icons/si";
 
 export default function Experience() {
@@ -27,7 +28,7 @@ export default function Experience() {
               avec le designer
             </p>
             <div className="technos">
-              <p>Stack technique :</p>
+              <p className="stack">Stack technique</p>
               <FaReact className="logoreact" />
               <AiFillGitlab className="logogitlab" />
               <FaDocker className="logodocker" />
@@ -42,17 +43,17 @@ export default function Experience() {
         <div className="card-imageexp">
           <div className="card-content">
             <div className="card-textexp">
-              <h2>2021-2022</h2>
-              <h3>Alternant</h3>
-              <p>
-                Dans l'entreprise Delta Industrie Service 30560
-                Saint-Hilaire-de-Brethmas
+              <h2 className="header">2021-2022</h2>
+              <h3 className="header2">Alternant</h3>
+              <p className="textepadding">
+                Dans l'entreprise<br/>Delta Industrie Service<br/>30560
+                <br/>Saint-Hilaire-de-Brethmas
               </p>
               <div className="icones">
                 <img className="bruh" src={DIS} alt="ecole" />
               </div>
-              <p>Dans l'école Digit'Alès</p>
-              <div className="icones">
+              <p className="texte">À l'école Digit'Alès</p>
+              <div className="iconesrounded">
                 <img className="digitales" src={DigitAles} alt="ecole" />
               </div>
             </div>
@@ -68,27 +69,26 @@ export default function Experience() {
               d'un site Web dynamique fonctionnant avec la base de données)
             </p>
             <div className="technos">
-              <p>Stack technique :</p>
+              <p className="stack">Stack technique</p>
               <SiPhp className="logophp" />
               <AiFillHtml5 className="logohtml" />
               <SiPhpmyadmin className="logophpmyadmin" />
               <FaCss3 className="logocss" />
               <SiMysql className="logomysql" />
-              <SiVisualstudio className="logovs" />
-              <SiPostgresql className="logosql" />
-              <FaLinux className="logolinux" />
             </div>
           </div>
         </div>
         <div className="card-imageexp">
           <div className="card-content">
             <div className="card-textexp">
-              <h2>2020-2021</h2>
-              <h3>Étudiant</h3>
-              <p>Lycée Général et Technologique Dhuoda 30900 Nîmes</p>
-            </div>
-            <div className="icones">
-              <img className="dhuoda" src={Dhuoda} alt="ecole" />
+              <h2 className="header">2020-2021</h2>
+              <h3 className="header2">Étudiant</h3>
+              <p className="textepadding">
+                Lycée Général et Technologique Dhuoda<br/>30900 Nîmes
+              </p>
+              <div className="iconesrounded">
+                <img className="dhuoda" src={Dhuoda} alt="ecole" />
+              </div>
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@
   }
   
   .cardprofilexp {
-    width: 800px;
+    width: 950px;
     height: 400px;
     background-color: #bae8e8;
     display: flex;
@@ -28,6 +28,9 @@
   
   .card-imageexp {
     color: #272343;
+    background: #86d3d3;
+    border-radius: 0px 8px 8px 0px;
+    box-shadow: outset 10px 0px 10px -5px rgba(0,0,0,0.5);
     height: 100%;
     width: 80%;
     display: flex;
@@ -40,6 +43,13 @@
 
   .icones{
     text-align: center;
+    background: white;
+  }
+
+  .iconesrounded{
+    text-align: center;
+    background: white;
+    border-radius: 0px 0px 8px 8px;
   }
 
   .dhuoda{
@@ -52,53 +62,77 @@
 
   .technos {
     margin-top: 16px;
+    background: white;
+    border-radius: 8px;
+  }
+
+  .stack{
+    background: #86d3d3;
+    border-radius:8px 8px 0px 0px;
+  }
+
+  .logoreact, .logogitlab ,.logodocker,.logocss, .logovscode,.logovs,.logosql, .logolinux,.logophp,.logohtml,.logophpmyadmin{
+    font-size: 40px;
+    margin: 8px;
   }
 
   .logoreact{
-    font-size: 40px;
     color: #61DBFB;
-    margin: 8px;
   }
   .logogitlab{
-    font-size: 40px;
-    margin: 8px;
     color: #E24329;
   }
 
   .logodocker{
-    font-size: 40px;
-    margin: 8px;
     color: #0db7ed;
   }
 
   .logocss{
-    font-size: 40px;
-    margin: 8px;
     color: #264de4;
   }
 
   .logovscode{
-    font-size: 40px;
-    margin: 8px;
     color: #008BD3;
   }
   .logovs{
-    font-size: 40px;
-    margin: 8px;
     color: #6A1B9A;
   }
   .logosql{
-    font-size: 40px;
-    margin: 8px;
     color: #326690;
   }
   .logolinux{
-    font-size: 40px;
-    margin: 8px;
     color: #000000;
   }
   .logophp{
-    font-size: 40px;
-    margin: 8px;
     color: #777BB3;
+  }
+
+  .logohtml{
+    color: #FF5733;
+  }
+
+  .logophpmyadmin{
+    color: #6C78AF;
+  }
+  .logomysql{
+    color: #F89C0E;
+    font-size: 50px;
+  }
+
+  .header{
+    background: #bae8e8;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .header2{
+    background: #bae8e8;
+  }
+
+  .texte{
+    background: white;
+  }
+
+  .textepadding{
+    background: white;
+    padding: 8px;
   }
