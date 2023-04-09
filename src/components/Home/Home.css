@@ -47,13 +47,12 @@
 }
 
 .GridContainer{
-    margin: 0px!important;
     min-height: 100dvh;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: 0.60fr 0.60fr 2.75fr 0fr; /* soit mettre 1fr 1fr 1fr 1fr*/
+    grid-template-columns: 0.60fr 0.60fr 2.75fr 0fr;
     background: linear-gradient(to right, #e3f6f5 25%, #ffffff 25%, #ffffff 100%);
 }
 
@@ -77,7 +76,6 @@
     font-size: 22px;
     color:#272343;
     line-height: 35px;
-    /* text-align: justify; */
 }
 .fontbold{
     font-weight: 700;
@@ -86,7 +84,6 @@
     color:#272343;
     line-height: 35px;
     width: max-content;
-    /* text-align: justify; */
 }
 
 .font2{

@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: #e3f6f5; */
   }
   a.active {
      color: #968bca!important;

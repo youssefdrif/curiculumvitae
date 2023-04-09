@@ -4,10 +4,11 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-y: scroll;
 }
 /* *{
-  box-shadow: 0 0 0 3px red inset;    //TO DEBUG CSS
+  box-shadow: 0 0 0 3px red inset;
 } */
 
 code {
