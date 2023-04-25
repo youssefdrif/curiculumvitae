@@ -1,97 +1,135 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Experience.css";
-import Dhuoda from "../../images/logo-dhuoda(A3).png";
-import DIS from "../../images/deltaindustrieservice.png";
-import DigitAles from "../../images/DigitAles.png";
-import { FaReact, FaDocker, FaCss3, FaLinux } from "react-icons/fa";
-import { AiFillGitlab, AiFillHtml5 } from "react-icons/ai";
-import {
-  SiVisualstudiocode,
-  SiVisualstudio,
-  SiPostgresql,
-  SiPhp,
-  SiPhpmyadmin,
-  SiMysql,
-} from "react-icons/si";
 
 export default function Experience() {
+  const [isToggled, setIsToggled] = useState(true);
+
+  const handleToggle = () => {
+    setIsToggled((prevState) => !prevState);
+  };
+
+  const handleLink = (event) => {
+    event.preventDefault();
+    window.open(event.target.href, "_blank");
+  };
   return (
-    <div className="grid-containerexp">
-      <div className="cardprofilexp">
-        <div className="card-content">
-          <div className="card-textexp">
-            <h2>Application ReactJS (Front-End)</h2>
-            <p>
+    <div className="grid-container-wrapper">
+      {isToggled ? (
+        <div className="grid-containerexp">
+          <div className="left-side">2021-2022</div>
+          <div className="separator"></div>
+          <div className="right-side">
+            <h2 className="intitule">Alternant Developpeur (Front-End)</h2>
+            <h3 className="fonction">
+              Developpement d'une application web en ReactJS
+            </h3>
+            <p className="description">
               Développement d'une application web ReactJS en entreprise et
-              exécution de tests avec Jest pour vérifier le fonctionnement de la
-              webapp et développement du code CSS en pixel perfect pour match
-              avec le designer
+              exécution de tests avec Jest, écriture du CSS pour mettre en forme
+              la maquette du designer.
             </p>
-            <div className="technos">
-              <p className="stack">Stack technique</p>
-              <FaReact className="logoreact" />
-              <AiFillGitlab className="logogitlab" />
-              <FaDocker className="logodocker" />
-              <FaCss3 className="logocss" />
-              <SiVisualstudiocode className="logovscode" />
-              <SiVisualstudio className="logovs" />
-              <SiPostgresql className="logosql" />
-              <FaLinux className="logolinux" />
+            <div className="stack">
+              <button className="React">React.Js</button>
+              <button className="Gitlab">GitLab</button>
+              <button className="Docker">Docker</button>
+              <button className="CSS">CSS</button>
+              <button className="VScode">Visual Studio Code</button>
+              <button className="VS">Visual Studio</button>
+              <button className="SQL">PostreSQL</button>
+              <button className="WSL">WSL</button>
             </div>
-          </div>
-        </div>
-        <div className="card-imageexp">
-          <div className="card-content">
-            <div className="card-textexp">
-              <h2 className="header">2021-2022</h2>
-              <h3 className="header2">Alternant</h3>
-              <p className="textepadding">
-                Dans l'entreprise<br/>Delta Industrie Service<br/>30560
-                <br/>Saint-Hilaire-de-Brethmas
-              </p>
-              <div className="icones">
-                <img className="bruh" src={DIS} alt="ecole" />
-              </div>
-              <p className="texte">À l'école Digit'Alès</p>
-              <div className="iconesrounded">
-                <img className="digitales" src={DigitAles} alt="ecole" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="cardprofilexp">
-        <div className="card-content">
-          <div className="card-textexp">
-            <h2>Application PHP(Front-End/Back-End)</h2>
-            <p>
-              Projet en fin d'études (Gestion d'une base de données et création
-              d'un site Web dynamique fonctionnant avec la base de données)
+            <p className="formation">
+              Entreprise{" "}
+              <a
+                className="entreprise"
+                href="https://www.zf.com/products/fr/cv/fleet/dis.html"
+                onClick={handleLink}
+              >
+                Delta Industrie Service
+              </a>
             </p>
-            <div className="technos">
-              <p className="stack">Stack technique</p>
-              <SiPhp className="logophp" />
-              <AiFillHtml5 className="logohtml" />
-              <SiPhpmyadmin className="logophpmyadmin" />
-              <FaCss3 className="logocss" />
-              <SiMysql className="logomysql" />
-            </div>
+            <p className="formation">
+              Campus{" "}
+              <a
+                className="entreprise"
+                href="https://campus-digitales.fr/"
+                onClick={handleLink}
+              >
+                Digit'Alès
+              </a>
+            </p>
           </div>
         </div>
-        <div className="card-imageexp">
-          <div className="card-content">
-            <div className="card-textexp">
-              <h2 className="header">2020-2021</h2>
-              <h3 className="header2">Étudiant</h3>
-              <p className="textepadding">
-                Lycée Général et Technologique Dhuoda<br/>30900 Nîmes
-              </p>
-              <div className="iconesrounded">
-                <img className="dhuoda" src={Dhuoda} alt="ecole" />
-              </div>
+      ) : (
+        <div className="grid-containerexp">
+          <div className="left-side">2020-2021</div>
+          <div className="separator"></div>
+          <div className="right-side">
+            <h2 className="intitule">Étudiant (Front-End/Back-End)</h2>
+            <h3 className="fonction">
+              Developpement d'une application web en PHP
+            </h3>
+            <p className="description">
+              Projet de fin d'études (Conception d'une base de données,
+              conception d'un site web récupérant les données des personnes
+              s'incrivant via un formulaire).
+            </p>
+            <div className="stack">
+              <button className="Php">PHP</button>
+              <button className="Html">HTML</button>
+              <button className="phpmyadmin">phpMyAdmin</button>
+              <button className="Mysql">MySQL</button>
             </div>
+            <p className="formation">
+              Lycée Général et Technologique{" "}
+              <a
+                className="entreprise"
+                href="https://dhuoda.mon-ent-occitanie.fr/"
+                onClick={handleLink}
+              >
+                Dhuoda
+              </a>
+            </p>
           </div>
         </div>
+      )}
+      <div className="svgcss">
+        <svg
+          onClick={handleToggle}
+          className={isToggled ? "circle-svg1" : "circle-svg"}
+          width="48"
+          height="48"
+        >
+          <circle
+            cx="24"
+            cy="24"
+            r="22"
+            fill="transparent"
+            stroke="#272343"
+            strokeWidth="2"
+          />
+          <path
+            d={
+              isToggled
+                ? "M24 14V34M14 24L24 35L34 24"
+                : "M24 14V34M14 24L24 13L34 24"
+            }
+            stroke="#272343"
+            strokeWidth="2"
+            fill="none"
+          />
+          <marker
+            id="arrowhead"
+            viewBox="0 0 10 10"
+            refX="5"
+            refY="5"
+            markerWidth="1"
+            markerHeight="6"
+            orient="auto-start-reverse"
+          >
+            <path d="M 0 0 L 10 5 L 0 10 z" />
+          </marker>
+        </svg>
       </div>
     </div>
   );

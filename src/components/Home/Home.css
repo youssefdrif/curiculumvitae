@@ -20,21 +20,9 @@
     font-size: 32px;
 }
 
-.button{
-    background-color: #272343;
-    border: none;
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
-    width: 192px;
-}
-
 .logogit, .logolinkedin{
     color: #272343;
-    font-size: 40px;
+    font-size: 36px;
     margin-top: 8px;
     margin-left: 8px;
     margin-right: 8px;
@@ -47,8 +35,8 @@
 }
 
 .GridContainer{
-    min-height: 100dvh;
-    min-height: 100vh;
+    overflow-y: hidden;
+    flex: 1;
     justify-content: center;
     align-items: center;
     display: grid;
@@ -69,6 +57,8 @@
     flex-basis: unset!important;
     display: grid;
     margin: 16px;
+    max-width: 800px;
+    
 }
 
 .font{
@@ -76,6 +66,7 @@
     font-size: 22px;
     color:#272343;
     line-height: 35px;
+    margin-left: 8px;
 }
 .fontbold{
     font-weight: 700;
@@ -84,6 +75,7 @@
     color:#272343;
     line-height: 35px;
     width: max-content;
+    margin-left: 8px;
 }
 
 .font2{
@@ -112,25 +104,26 @@
 
   .Grid4{
     display: flex;
-    margin: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 8px;
     grid-gap: 4px;
+    margin-bottom: 0px;
   }
 
   .icons{
     color: #272343;
     margin-right: 4px;
+    align-self: center;
+    width: 20px;
   }
 
   .button1 {
     display: inline-block;
-    background-color: transparent;
-    padding: 10px 20px;
+    background-color: #272343;
     border: 2px solid #272343;
+    color: #bae8e8;
+    padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
-    color: #272343;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
@@ -139,13 +132,15 @@
   }
 
   .button1:hover {
-    background-color: #272343;
-    color: #bae8e8;
+    background-color: transparent;
+    color: #272343;
+    border: 2px solid #272343;
   }
   .Grid5{
     display: flex;
     margin: 8px;
     grid-gap: 16px;
+    margin-top: 0px;
   }
 
   .fontbold span{
@@ -159,6 +154,10 @@
   
   .fontbold span:last-child {
     animation-delay: 2s;
+  }
+
+  .containerInfos{
+    display: flex;
   }
   
   @keyframes appear {

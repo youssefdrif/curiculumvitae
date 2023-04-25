@@ -1,138 +1,111 @@
+*, ::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body,#root,.grid-container-wrapper{
+  height: 100%;
+}
+
+
+.grid-container-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows:3fr 0.5fr;
+}
+
 .grid-containerexp {
-    background: #e3f6f5;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    /* overflow: scroll; */
-  }
-  
-  .cardprofilexp {
-    width: 950px;
-    height: 400px;
-    background-color: #bae8e8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 48px;
-    margin-bottom: 48px;
-  }
-  
-  .card-textexp {
-    text-align: center;
-    margin: 16px;
-    color: #272343;
-  }
-  
-  .card-imageexp {
-    color: #272343;
-    background: #86d3d3;
-    border-radius: 0px 8px 8px 0px;
-    box-shadow: outset 10px 0px 10px -5px rgba(0,0,0,0.5);
-    height: 100%;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  p{
-    font-weight: 500;
-  }
+  display: grid;
+  grid-template-columns: 0.3fr 3px 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
 
-  .icones{
-    text-align: center;
-    background: white;
-  }
+.left-side {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 8px;
+  color: #272343;
+}
 
-  .iconesrounded{
-    text-align: center;
-    background: white;
-    border-radius: 0px 0px 8px 8px;
-  }
+.separator {
+  height: 160px;
+  background-color: #272343;
+}
 
-  .dhuoda{
-    width: 100px;
-  }
+.right-side {
+  font-size: 24px;
+  text-align: justify;
+  padding: 20px;
+}
 
-  .digitales{
-    width: 150px;
-  }
+.svgcss{
+  text-align: center;
+}
+.circle-svg1:hover,.circle-svg:hover{
+  cursor: pointer;
+}
 
-  .technos {
-    margin-top: 16px;
-    background: white;
-    border-radius: 8px;
-  }
+.intitule{
+  margin: 8px;
+  margin-bottom: 0px;
+  font-size: 32px;
+  color: #272343;
+}
 
-  .stack{
-    background: #86d3d3;
-    border-radius:8px 8px 0px 0px;
-  }
+.fonction{
+  margin: 8px;
+  margin-top: 0px;
+  font-size: 24px;
+  color: #272343;
+}
+.description{
+  max-width: 600px;
+  margin: 8px;
+  color: #272343;
+}
 
-  .logoreact, .logogitlab ,.logodocker,.logocss, .logovscode,.logovs,.logosql, .logolinux,.logophp,.logohtml,.logophpmyadmin{
-    font-size: 40px;
-    margin: 8px;
-  }
+.formation{
+  max-width: 600px;
+  margin: 8px;
+  color: #272343;
+}
+.entreprise{
+  text-decoration: underline;
+}
+.entreprise:hover{
+  cursor: pointer;
+}
 
-  .logoreact{
-    color: #61DBFB;
-  }
-  .logogitlab{
-    color: #E24329;
-  }
+.entreprise:visited{
+  color: inherit;
+  text-decoration: inherit;
+}
 
-  .logodocker{
-    color: #0db7ed;
-  }
+.stack{
+  max-width: 600px;
+  margin: 8px;
+  margin-top: 16px;
+}
 
-  .logocss{
-    color: #264de4;
-  }
-
-  .logovscode{
-    color: #008BD3;
-  }
-  .logovs{
-    color: #6A1B9A;
-  }
-  .logosql{
-    color: #326690;
-  }
-  .logolinux{
-    color: #000000;
-  }
-  .logophp{
-    color: #777BB3;
-  }
-
-  .logohtml{
-    color: #FF5733;
-  }
-
-  .logophpmyadmin{
-    color: #6C78AF;
-  }
-  .logomysql{
-    color: #F89C0E;
-    font-size: 50px;
-  }
-
-  .header{
-    background: #bae8e8;
-    border-radius: 8px 8px 0px 0px;
-  }
-
-  .header2{
-    background: #bae8e8;
-  }
-
-  .texte{
-    background: white;
-  }
-
-  .textepadding{
-    background: white;
-    padding: 8px;
-  }
+.React,.Gitlab,.Docker,.CSS,.VScode,.VS,.SQL,.WSL, .Php, .Html, .phpmyadmin,.Mysql{
+  display: inline-block;
+  background-color: #272343;
+  border: 2px solid #272343;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 8px;
+  margin-left: 0px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}

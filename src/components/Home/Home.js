@@ -74,33 +74,38 @@ export default function Home() {
           <span>Bonjour!</span> <span>Je suis</span> <span>Drif Youssef,</span>
         </p>
         <p className="font">
-          actuellement diplômé d'une licence professionnelle en cybersécurité je
-          souhaiterai approfondir mon experience en développement web.
+          actuellement diplômé d'une licence professionnelle en cybersécurité{" "}
+          <br />
+          je souhaiterai approfondir mon experience en développement web.
         </p>
         <p className="font">
           Durant cette alternance j'ai développé une application web codé en
           ReactJS et effectué des tests avec Jest.
         </p>
         <div className="Grid4" xs={2}>
-          <p className="font2">
-            <IoCalendar className="icons" /> 23 ans
-          </p>
-          <p className="font2">
+          <div className="containerInfos">
+            <IoCalendar className="icons" />
+            <p className="font2">23 ans</p>
+          </div>
+          <div className="containerInfos">
             <MdLocationPin className="icons" />
-            Alès, 30100
-          </p>
-          <p className="font2">
-            <MdPending className="icons" />
-            En recherche d'un emploi en alternance
-          </p>
-          <p className="font2">
-            <FaCarAlt className="icons" /> En cours d'optention
-          </p>
-          <p className="font2">
+            <p className="font2">Alès, 30100</p>
+          </div>
+          <div className="containerInfos">
             <AiFillPhone className="icons" />
-            +33782970537
-          </p>
+            <p className="font2">+33782970537</p>
+          </div>
         </div>
+          <div className="Grid5" xs={2}>
+            <div className="containerInfos">
+              <MdPending className="icons" />
+              <p className="font2">En recherche d'un emploi en alternance</p>
+            </div>
+            <div className="containerInfos">
+              <FaCarAlt className="icons" />
+              <p className="font2">En cours d'obtention</p>
+            </div>
+          </div>
         <div className="Grid5" xs={2}>
           <button
             onClick={() => {
