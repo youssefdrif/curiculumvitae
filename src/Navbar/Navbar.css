@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #272343;
   }
   a.active {
      color: #968bca!important;
@@ -12,7 +13,7 @@
     font-weight: 700;
     font-size: 30px;
     margin: 24px;
-    color: #272343;
+    color: #fff;
     transition: all 0.3s ease-in-out;
   }
   .Navbar > .nav-logo:hover {
@@ -20,12 +21,11 @@
   }
   
   .Navbar > .nav-items > a {
-    color: #272343;
+    color: #fff;
     font-size: 22px;
     text-decoration: none;
     margin: 24px;
     position: relative;
-    opacity: 0.9;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
   }

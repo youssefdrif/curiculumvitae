@@ -41,7 +41,6 @@
     align-items: center;
     display: grid;
     grid-template-columns: 0.60fr 0.60fr 2.75fr 0fr;
-    background: linear-gradient(to right, #e3f6f5 25%, #ffffff 25%, #ffffff 100%);
 }
 
 .Grid2,.Grid{
@@ -68,6 +67,14 @@
     line-height: 35px;
     margin-left: 8px;
 }
+
+.fonth{
+  font-weight: bold;
+  font-size: 22px;
+  color:#272343;
+  line-height: 35px;
+  margin-left: 8px;
+}
 .fontbold{
     font-weight: 700;
     font-size: 25px;
@@ -92,13 +99,10 @@
   }
 
   .card{
-    background-color: #bae8e8;
     display: grid;
     justify-content: center;
     text-align: center;
     align-items: center;
-    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8%;
     grid-column: 2;
   }
 
@@ -120,7 +124,7 @@
     display: inline-block;
     background-color: #272343;
     border: 2px solid #272343;
-    color: #bae8e8;
+    color: #fff;
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;

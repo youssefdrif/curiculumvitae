@@ -55,11 +55,8 @@ export default function Home() {
           />
         </div>
         <div className="Grid2" xs={2}>
-          <p className="font">
-            DRIF Youssef
-            <br />
-            Developpeur Front-End
-          </p>
+          <p className="fonth">DRIF Youssef</p>
+          <p className="font">Developpeur<br/> Front-End</p>
           <div className="Gridlogo">
             <BsGithub onClick={handleClickGitHub} className="logogit" />
             <BsLinkedin
@@ -96,16 +93,16 @@ export default function Home() {
             <p className="font2">+33782970537</p>
           </div>
         </div>
-          <div className="Grid5" xs={2}>
-            <div className="containerInfos">
-              <MdPending className="icons" />
-              <p className="font2">En recherche d'un emploi en alternance</p>
-            </div>
-            <div className="containerInfos">
-              <FaCarAlt className="icons" />
-              <p className="font2">En cours d'obtention</p>
-            </div>
+        <div className="Grid5" xs={2}>
+          <div className="containerInfos">
+            <MdPending className="icons" />
+            <p className="font2">En recherche d'un emploi en alternance</p>
           </div>
+          <div className="containerInfos">
+            <FaCarAlt className="icons" />
+            <p className="font2">En cours d'obtention</p>
+          </div>
+        </div>
         <div className="Grid5" xs={2}>
           <button
             onClick={() => {
