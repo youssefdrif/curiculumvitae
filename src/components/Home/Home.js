@@ -71,9 +71,9 @@ export default function Home() {
           <span>Bonjour!</span> <span>Je suis</span> <span>Drif Youssef,</span>
         </p>
         <p className="font">
-          actuellement diplômé d'une licence professionnelle en cybersécurité{" "}
+        Actuellement diplômé d'une licence professionnelle en cybersécurité,{" "}
           <br />
-          je souhaiterai approfondir mon experience en développement web.
+          je souhaiterais approfondir mon expérience en développement web.
         </p>
         <p className="font">
           Durant cette alternance j'ai développé une application web codé en

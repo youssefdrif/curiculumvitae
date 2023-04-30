@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Experience.css";
 
 export default function Experience() {
@@ -19,9 +19,9 @@ export default function Experience() {
           <div className="left-side">2021-2022</div>
           <div className="separator"></div>
           <div className="right-side">
-            <h2 className="intitule">Alternant Developpeur (Front-End)</h2>
+            <h2 className="intitule">Alternant Développeur (Front-End)</h2>
             <h3 className="fonction">
-              Developpement d'une application web en ReactJS
+              Développement d'une application web en ReactJS
             </h3>
             <p className="description">
               Développement d'une application web ReactJS en entreprise et
@@ -56,6 +56,16 @@ export default function Experience() {
                 onClick={handleLink}
               >
                 Digit'Alès
+              </a>
+            </p>
+            <p className="formation">
+              L'espace numérique de formation{" "}
+              <a
+                className="entreprise"
+                href="https://www.cnam.fr/"
+                onClick={handleLink}
+              >
+                CNAM
               </a>
             </p>
           </div>
