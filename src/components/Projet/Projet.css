@@ -16,7 +16,7 @@ html,body,#root,.grid-container-wrapper{
   grid-template-rows:3fr 0.5fr;
 }
 
-.grid-containerexp {
+.grid-containerprojet {
   display: grid;
   grid-template-columns: 0.3fr 3px 1fr;
   align-items: center;
@@ -25,20 +25,20 @@ html,body,#root,.grid-container-wrapper{
   max-width: 900px;
 }
 
-.left-side {
+.left-sideprojet {
   font-size: 32px;
   font-weight: bold;
   text-align: center;
-  margin-right: 8px;
+  margin-left: 64px;
   color: #272343;
 }
 
-.separator {
+.separatorprojet {
   height: 160px;
   background-color: #272343;
 }
 
-.right-side {
+.right-sideprojet {
   font-size: 24px;
   text-align: justify;
   padding: 20px;
@@ -51,49 +51,32 @@ html,body,#root,.grid-container-wrapper{
   cursor: pointer;
 }
 
-.intitule{
+.intituleprojet{
   margin: 8px;
   margin-bottom: 0px;
   font-size: 32px;
   color: #272343;
 }
 
-.fonction{
+.fonctionprojet{
   margin: 8px;
   margin-top: 0px;
   font-size: 24px;
   color: #272343;
 }
-.description{
+.descriptionprojet{
   max-width: 600px;
   margin: 8px;
   color: #272343;
 }
 
-.formation{
-  max-width: 600px;
-  margin: 8px;
-  color: #272343;
-}
-.entreprise{
-  text-decoration: underline;
-}
-.entreprise:hover{
-  cursor: pointer;
-}
-
-.entreprise:visited{
-  color: inherit;
-  text-decoration: inherit;
-}
-
-.stack{
+.stackprojet{
   max-width: 600px;
   margin: 8px;
   margin-top: 16px;
 }
 
-.React,.Gitlab,.Docker,.CSS,.VScode,.VS,.SQL,.WSL, .Php, .Html, .phpmyadmin,.Mysql{
+.Laravel,.CSS,.VScode{
   display: inline-block;
   background-color: #272343;
   border: 2px solid #272343;
@@ -110,9 +93,24 @@ html,body,#root,.grid-container-wrapper{
   transition: all 0.3s ease-in-out;
 }
 
-.grid-containerexp.rotate {
+.grid-containerprojet.rotate {
   animation: rotate 2s ease-in-out forwards;
 }
+
+/* .my-github-btn {
+  background-color: #24292e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.my-github-btn:hover {
+  background-color: #0366d6;
+} */
 
 @keyframes rotate {
   0% {

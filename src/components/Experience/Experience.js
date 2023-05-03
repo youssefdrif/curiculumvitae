@@ -3,9 +3,15 @@ import "./Experience.css";
 
 export default function Experience() {
   const [isToggled, setIsToggled] = useState(true);
+  const [isRotated, setIsRotated] = useState(false);
 
   const handleToggle = () => {
+    setIsRotated(true);
     setIsToggled((prevState) => !prevState);
+  };
+
+  const handleAnimationEnd = () => {
+    setIsRotated(false);
   };
 
   const handleLink = (event) => {
@@ -15,7 +21,10 @@ export default function Experience() {
   return (
     <div className="grid-container-wrapper">
       {isToggled ? (
-        <div className="grid-containerexp">
+        <div
+        className={`grid-containerexp ${isRotated ? "rotate" : ""}`}
+        onAnimationEnd={handleAnimationEnd}
+      >
           <div className="left-side">2021-2022</div>
           <div className="separator"></div>
           <div className="right-side">
@@ -71,7 +80,10 @@ export default function Experience() {
           </div>
         </div>
       ) : (
-        <div className="grid-containerexp">
+        <div
+          className={`grid-containerexp ${isRotated ? "rotate" : ""}`}
+          onAnimationEnd={handleAnimationEnd}
+        >
           <div className="left-side">2020-2021</div>
           <div className="separator"></div>
           <div className="right-side">

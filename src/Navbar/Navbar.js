@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="Navbar">
       <NavLink to="/" className="nav-logo"><AiFillHome /></NavLink>
       <div className={`nav-items ${isOpen && "open"}`}>
-        <NavLink to="/profil">Projets personnels</NavLink>
+        <NavLink to="/projet">Projets personnels</NavLink>
         <NavLink to="/experience">Experience</NavLink>
       </div>
       <div
