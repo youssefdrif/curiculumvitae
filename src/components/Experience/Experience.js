@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Experience.css";
+import { BsGithub } from "react-icons/bs";
 
 export default function Experience() {
   const [isToggled, setIsToggled] = useState(true);
@@ -18,13 +19,19 @@ export default function Experience() {
     event.preventDefault();
     window.open(event.target.href, "_blank");
   };
+
+  const handleClickTrail = () => {
+    window.open("https://github.com/youssefdrif/Trail/tree/main/BDD", "_blank") ||
+      window.location.replace("https://github.com/youssefdrif/Trail/tree/main/BDD");
+  };
+
   return (
     <div className="grid-container-wrapper">
       {isToggled ? (
         <div
-        className={`grid-containerexp ${isRotated ? "rotate" : ""}`}
-        onAnimationEnd={handleAnimationEnd}
-      >
+          className={`grid-containerexp ${isRotated ? "rotate" : ""}`}
+          onAnimationEnd={handleAnimationEnd}
+        >
           <div className="left-side">2021-2022</div>
           <div className="separator"></div>
           <div className="right-side">
@@ -112,6 +119,12 @@ export default function Experience() {
                 Dhuoda
               </a>
             </p>
+            <div className="my-github-btn">
+              <button onClick={handleClickTrail} className="Github">
+                <BsGithub className="logogitprojet" />
+                <p className="fontgit">Projet trail</p>
+              </button>
+            </div>
           </div>
         </div>
       )}

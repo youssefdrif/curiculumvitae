@@ -97,20 +97,46 @@ html,body,#root,.grid-container-wrapper{
   animation: rotate 2s ease-in-out forwards;
 }
 
-/* .my-github-btn {
-  background-color: #24292e;
+.Github {
+  margin-left: 8px;
+  background-color: transparent;
+  color: #272343;
+  border: 2px solid #272343;
+  display: flex;
+  border: 2px solid #272343;
   color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
   cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 12px 8px 12px;
 }
 
-.my-github-btn:hover {
-  background-color: #0366d6;
-} */
+.Github:hover{
+  background-color: #272343;
+}
+
+.Github:hover > * {
+  color:#fff;
+}
+
+
+.logogitprojet{
+  color: #272343;
+  font-size: 28px;
+  margin-right: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.fontgit{
+  color: #272343;
+  font-size: 16px;
+  align-self: center;
+}
 
 @keyframes rotate {
   0% {

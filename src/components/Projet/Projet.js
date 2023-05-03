@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Projet.css";
+import { BsGithub } from "react-icons/bs";
 
 export default function Experience() {
   const [isToggled, setIsToggled] = useState(true);
@@ -13,6 +14,12 @@ export default function Experience() {
   const handleAnimationEnd = () => {
     setIsRotated(false);
   };
+
+  const handleClickMeteo = () => {
+    window.open("https://github.com/youssefdrif/webappMeteo", "_blank") ||
+      window.location.replace("https://github.com/youssefdrif/webappMeteo");
+  };
+
 
   return (
     <div className="grid-container-wrapper">
@@ -43,7 +50,10 @@ export default function Experience() {
               <button className="VScode">Visual Studio Code</button>
             </div>
             <div className="my-github-btn">
-              Trouver librairie pour button github
+              <button onClick={handleClickMeteo} className="Github">
+                <BsGithub className="logogitprojet" />
+                <p className="fontgit">Webapp météo</p>
+              </button>
             </div>
           </div>
         </div>

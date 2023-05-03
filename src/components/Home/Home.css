@@ -123,8 +123,9 @@
   .button1 {
     display: inline-block;
     background-color: #272343;
+    background-color: transparent;
+    color: #272343;
     border: 2px solid #272343;
-    color: #fff;
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
@@ -136,8 +137,8 @@
   }
 
   .button1:hover {
-    background-color: transparent;
-    color: #272343;
+    background-color: #272343;
+    color: #fff;
     border: 2px solid #272343;
   }
   .Grid5{
