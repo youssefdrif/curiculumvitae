@@ -41,8 +41,7 @@ export default function Experience() {
               Utilisation de l'API openweathermap pour récupérer les données
               météorologiques pour les afficher.
               <br /> L'utilisateur peut ensuite rechercher une ville ou un pays
-              via une barre de recherche pour avoir la météo de la ville/pays
-              qu'il recherche.
+              via une barre de recherche connaitre la météo.
             </p>
             <div className="stackprojet">
               <button className="Laravel">Laravel</button>
